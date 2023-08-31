@@ -1,0 +1,12 @@
+import random
+
+def generate_team_code():
+  """Generates a random 10-digit team code."""
+  team_code = ""
+  for i in range(10):
+    team_code += str(random.randint(0, 9))
+  return team_code
+
+if __name__ == "__main__":
+  team_code = generate_team_code()
+  print(team_code)
